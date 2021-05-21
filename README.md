@@ -30,6 +30,7 @@ OS: Windows 7 SP1+, 8, 10, 64-bit versions only; Mac OS X 10.12+; Ubuntu 16.04, 
 Скачивание архива с exe файлом приложения и запуск его
 
 Структура приложения:
+
 Визуальная арифметика.exe - Исполняемый файл проекта.
 UnityPlayer.dll- эта DLL содержит весь собственный код движка Unity.
 WinPixEventRuntime.dll- Эта DLL включает поддержку профилировщика Windows PIX.
