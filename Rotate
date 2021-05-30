@@ -1,0 +1,32 @@
+
+public class SafeRotation : MonoBehaviour
+{
+    public static float Chenge; // угол поворота
+
+    void Start()
+    {
+        Chenge = 0;
+    }
+
+    void Update()
+    {
+        transform.rotation = Quaternion.Euler(1f, 1f, Chenge);
+    }
+}
+
+
+public class Left : MonoBehaviour
+{
+    public void Swap()
+    {
+        SafeRotation.Chenge += 15;
+    }
+}
+
+public class Right : MonoBehaviour
+{
+    public void Swap()
+    {
+        SafeRotation.Chenge -= 15;
+    }
+}
