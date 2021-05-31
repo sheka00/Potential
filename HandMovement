@@ -1,0 +1,32 @@
+//Кнопка вверх
+public class Up : MonoBehaviour
+{
+    public void Swap()
+    {
+        if (Arm.ChenInt != 2)
+        {
+            Arm.Chenge++;
+            Arm.ChenInt++;
+        }
+    }
+}
+
+//Ладонь горизонтально 
+public class Arm : MonoBehaviour
+{
+    public static float Chenge { get; set; } 
+    private readonly float cons = 5f;
+    public static int ChenInt;
+
+    void Start()
+    {
+        Chenge = 0;
+        ChenInt = 0;
+    }
+
+    void Update()
+    {
+        //transform.rotation = Quaternion.Euler(1f, 1f, Chenge);
+        transform.position = new Vector3(2f, cons / 31 +35*Chenge / 100, 0);
+    }
+}
